@@ -1,0 +1,19 @@
+.iCompanyWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.iCompanyWrapper>h1{
+    display: flex;
+    width: 90%;
+    
+}
+.iCompanyWrapper>p{
+    display: flex;
+    width: 85%;
+    font-size: 22px;
+
+}
