@@ -14,16 +14,13 @@ export default class App extends React.Component {
       <div className="App">
       <ScrollUpButton style={{background: "transparent"}}/>
       <Menu/>
-        <div className="body">
-          <div className="products">
-            <Header/>
-            <ScrollableAnchor id={'company'}><Company/></ScrollableAnchor>
-            <ScrollableAnchor id={'products'}><Product/></ScrollableAnchor>
-            <br></br>
-            <br></br>
-          </div>
-        </div>
-        <ScrollableAnchor id={'contacts'}><Footer/></ScrollableAnchor>
+      <Header/>
+      <ScrollableAnchor id={'company'}><Company/></ScrollableAnchor>
+      <br></br>
+      <ScrollableAnchor id={'products'}><Product/></ScrollableAnchor>
+      <br></br>
+      <br></br>
+      <ScrollableAnchor id={'contacts'}><Footer/></ScrollableAnchor>
       </div>
     );
   }

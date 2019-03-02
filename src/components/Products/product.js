@@ -22,10 +22,13 @@ export default class Product extends React.Component{
         const { open } = this.state; 
         return(
             <div className="wrapper">
+            <div className="product">
                 <h2 className="title">
                     Гумат калия YAROVIT AGRO «Универсальный»  
                 </h2>
+                
                 <div className="block_product">
+               
                     <div className="photo">
                         <Carousel>
                             <div>
@@ -61,6 +64,9 @@ export default class Product extends React.Component{
                             </Modal>
                     </div>
                 </div>
+                </div>
+                <br></br>
+                <br></br>
                 <div className="seeMore" onClick={() =>this.setState({openD: !this.state.openD})}>
                     Подробнее <img src={Arrow} />
                 </div>{
@@ -171,6 +177,10 @@ export default class Product extends React.Component{
                         <div className="image_product">
                             <img src={require("../../image/product.jpg")}></img>
                             </div>
+
+
+                <br></br><br></br>
+                            <div className="product">
                         <h2 className="title">
                     Гумат калия YAROVIT AGRO «Универсальный»  
                 </h2>
@@ -210,6 +220,9 @@ export default class Product extends React.Component{
                             </Modal>
                     </div>
                 </div>
+                </div>
+                <br></br>
+                <br></br>
                 <div className="seeMore" onClick={() =>this.setState({openD: !this.state.openD})}>
                     Подробнее <img src={Arrow} />
                 </div>{
@@ -320,6 +333,8 @@ export default class Product extends React.Component{
                         <div className="image_product">
                             <img src={require("../../image/product.jpg")}></img>
                             </div>
+                            <br></br><br></br>
+                            <div className="product">
                         <h2 className="title">
                     Гумат калия YAROVIT AGRO «Универсальный»  
                 </h2>
@@ -359,6 +374,9 @@ export default class Product extends React.Component{
                             </Modal>
                     </div>
                 </div>
+                </div>
+                <br></br>
+                <br></br>
                 <div className="seeMore" onClick={() =>this.setState({openD: !this.state.openD})}>
                     Подробнее <img src={Arrow} />
                 </div>{
