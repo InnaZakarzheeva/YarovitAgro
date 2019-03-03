@@ -6,7 +6,7 @@ export default class Footer extends React.Component{
         return(
             <div className="iFooterWrapper">
                 <div className="iFooterLogo">
-                <div>YAROVIT AGRO</div>
+                YAROV<img src={require('../../image/logo.png')} className="logo_img" />T AGRO
                 </div>
                 <div className="iFooterAbout">
                 О нашем интернет-магазине:

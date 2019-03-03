@@ -11,9 +11,9 @@
 }
 
 .logo_img{
-    width: 50px;
     height: 50px;
-    filter: drop-shadow(0 0 40px white);
+    filter: drop-shadow(0 0 40px black);
+    margin:0 5px 0 5px;
 }
 
 .logo{
@@ -52,11 +52,7 @@
     width: 200px;
     justify-content: center;
     align-items: center;
-    /*
-    border:solid 3px white;
-    border-radius: 15px;
-    */
-    border:1px solid white;
+    border:2px solid white;
     border-radius:  5px;
     
     font-size: 26px;

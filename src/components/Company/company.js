@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './company.css';
-
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 export default class Company extends React.Component {
   render() {
     return (
         <div className="iCompanyWrapper">
-            <h1>Гуминовые удобрения ТМ «YAROVIT AGRO» это качественная органика и минералы изготовленные по европейским стандартам.</h1>
+            <ScrollableAnchor id={'company'}><h1>Гуминовые удобрения ТМ «YAROVIT AGRO» это качественная органика и минералы изготовленные по европейским стандартам.</h1></ScrollableAnchor>
            
             <p> <img className="imageCompany" src={require("../../image/company.jpg")}></img>Компания «YAROVIT AGRO» занимается производством и продажей органо-минеральных удобрений с 2005 года. 
 В основе производства лежит качество выпускаемой продукции и качество сырьевого материала. 

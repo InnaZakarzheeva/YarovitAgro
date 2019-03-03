@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './menu.css';
-import ScrollableAnchor from 'react-scrollable-anchor';
+
 
 export default class Menu extends React.Component{
     render(){
         return(
             <div className="wrapper_menu">
             <div className="logo">
-            YAROVIT AGRO
+            YAROV<img src={require('../../image/logo.png')} className="logo_img" />T AGRO
             </div>
                 <div className="menuItem">
                     <a href="#company">О компании</a>

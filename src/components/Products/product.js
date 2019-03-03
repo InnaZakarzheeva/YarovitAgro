@@ -4,6 +4,7 @@ import Modal from 'react-responsive-modal';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import Arrow from '../../image/down.png'
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 export default class Product extends React.Component{
     state = {
@@ -23,10 +24,11 @@ export default class Product extends React.Component{
         return(
             <div className="wrapper">
             <div className="product">
+            <ScrollableAnchor id={'products'}>
                 <h2 className="title">
                     Гумат калия YAROVIT AGRO «Универсальный»  
                 </h2>
-                
+            </ScrollableAnchor>
                 <div className="block_product">
                
                     <div className="photo">

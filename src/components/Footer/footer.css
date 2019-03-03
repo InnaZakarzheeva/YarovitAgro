@@ -12,16 +12,19 @@
     width: 30%;
     align-items: center;
     justify-content: center;
-   
-}
-.iFooterLogo>div{
-    width: 50%;
     font-size: 54px;
     font-weight: 600;
     color: white;
     opacity: 0.75;
     text-shadow: 0 0 25px black;
+
 }
+.logo_img{
+    height: 50px;
+    filter: drop-shadow(0 0 40px black);
+    margin:0 5px 0 5px;
+}
+
 .iFooterAbout{
     display: flex;
     flex-direction: column;
