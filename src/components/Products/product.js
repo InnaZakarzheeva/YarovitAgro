@@ -27,51 +27,33 @@ export default class Product extends React.Component{
             <div className="product">
             <ScrollableAnchor id={'products'}>
                 <h2 className="title">
-                    Гумат калия YAROVIT «Универсальный»  
+                    {this.props.item.title} 
                 </h2>
             </ScrollableAnchor>
                 <div className="block_product">
                
                     <div className="photo">
                         <Carousel>
-                            <div>
-                                <img className="picture" src={require('../../image/2.jpg')} />
-                            </div>
-                            <div>
-                                <img className="picture" src={require('../../image/univ1.jpg')} />
-                            </div>
-                            {/*<div>
-                                <img className="picture" src={require('../../image/1.jpg')} />
-                            </div>
-                            <div>
-                                <img className="picture" src={require('../../image/3.jpg')} />
-                            </div>
-                            <div>
-                                <img className="picture" src={require('../../image/b.jpg')} />
-                            </div>
-                            <div>
-                                <img className="picture" src={require('../../image/zn.jpg')} />
-                            </div>*/}
-
+                            {this.props.item.photo.map(photo => <img src={photo}/>)}
                         </Carousel>
                     </div>
                     <div className="order_description">
                         <div className="aboutProduct">
-                            Применение гумат калия «Универсальный» приводит к росту урожайности в среднем на 15-30%, а на овощных культурах — до 40%, заметному повышению содержания полезных веществ в растениях (витаминов, сахаров, в пшенице — клейковины, в масличных культурах — масел). Уменьшает содержания вредных веществ в растениях и плодах (например, нитратов). Стимулирует деятельность почвенных микроорганизмов, что ведет к обогащению почвы доступными для растений элементами питания.
+                           {this.props.item.aboutProduct}
                             </div>
                         <div className="price">    
                             <div className="priceText">
                                 Стоимость:
                             </div>
                             <div className="priceNumber">
-                                80 ГРН
+                                {this.props.item.price}
                             </div>
                          </div>
                         <button onClick={this.onOpenModal} className="buy" type="submit">Купить</button>
                             <Modal open={open} onClose={this.onCloseModal} center>
                                 <div className="yourOrder">Ваш заказ: </div>
-                                <div className="modalWindow">Gumat i td i tpasdasdasd</div>
-                                <div className="modalWindow">Стоимость: 80 ГРН  </div>
+                                <div className="modalWindow">{this.props.item.title}</div>
+                                <div className="modalWindow">Стоимость: {this.props.item.price}  </div>
                                 <div className="modalWindow">Наш телефон:</div>
                                 <div className="modalWindow"><a href="tel:+380672570187">+38 (067) 25-70-187</a></div>
                             </Modal>
@@ -87,26 +69,10 @@ export default class Product extends React.Component{
                                     Преимущества:
                                 </div>
                                 <ul>
-                                    <li><span className="detail-item">
-                                         Повышение объема получаемого урожая до 35% (в том числе и на почвах низкой плодородности);
-                                         </span>
-                                    </li>
-                                    <li><span className="detail-item">
-                                         Укрепление иммунитета, обеспечение стойкости культур к болезням;
-                                        </span>
-                                    </li>
-                                    <li><span className="detail-item">
-                                         Способствование формированию крепкой и сильной корневой системы;
-                                        </span>
-                                    </li>
-                                    <li><span className="detail-item">  
-                                         Качественное улучшение урожая;
-                                        </span>
-                                    </li>
-                                    <li><span className="detail-item">
-                                         Повышение объема получаемого урожая до 35% (в том числе и на почвах низкой       плодородности);
-                                        </span>
-                                    </li>
+    
+                                         {this.props.item.detail_item.map(detail_item => <li><span className="detail_item"> {detail_item}</span></li>)} 
+                                        
+                                   
                                 </ul>
                             </div>
                             <div className="details_title">
@@ -114,66 +80,10 @@ export default class Product extends React.Component{
                             </div>
                             <div className="block_details">
                                 <ul className="ul">
-                                    <li><span className="detail-item1">
-                                        Гуминовые кислоты 84 г / л;
-                                        </span>
-                                    </li>
-                                    <li><span className="detail-item1">
-                                    Фульвовые кислоты 42,4 г / л,
-                                        </span>
-                                    </li>
-                                    <li><span className="detail-item1">
-                                        Азот 10 г / л;
-                                        </span>
-                                    </li>
-                                    <li><span className="detail-item1">
-                                        Фосфор 8 г / л;
-                                        </span>
-                                    </li>
-                                    <li><span className="detail-item1">
-                                        Калий 24,1г / л;
-                                        </span>
-                                    </li>
-                                    <li><span className="detail-item1">
-                                        Кремний 40 мг / л;
-                                        </span>
-                                    </li>
-                                    <li><span className="detail-item1">
-                                        Сэра 14 мг / л;
-                                        </span>
-                                    </li>
-                                    <li><span className="detail-item1">
-                                        Магний 0,9 мг / л;
-                                        </span>
-                                    </li>
-                                    <li><span className="detail-item1">
-                                        Марганец 19,6 мг / л;
-                                        </span>
-                                    </li>
-                                    <li><span className="detail-item1">
-                                        Цинк 10 мг / л;
-                                        </span>
-                                    </li>
-                                    <li><span className="detail-item1">
-                                        Никелю 1,14 мг / л;
-                                        </span>
-                                    </li>
-                                    <li><span className="detail-item1">
-                                        Медь 18,6 мг / л;
-                                        </span>
-                                    </li>
-                                    <li><span className="detail-item1">
-                                        Кобальт 4,53 мг / л;
-                                        </span>
-                                    </li>
-                                    <li><span className="detail-item1">
-                                        Молибден 0,4 мг / л;
-                                        </span>
-                                    </li>
-                                    <li><span className="detail-item1">
-                                        PH – 9,5.
-                                        </span>
-                                    </li>
+                                    
+                                    {this.props.item.detail_item1.map(detail_item1 => <li><span className="detail_item1"> {detail_item1}</span></li>)}
+                                 
+                                    
                                 </ul>
                             </div>  
                             <div className="details_title">Расчет нормы гумата калия</div>
@@ -184,9 +94,10 @@ export default class Product extends React.Component{
                         </div>
                         ):null}
                          <br></br><br></br>
-                        {/*<div className="image_product">
-                            <img src={require("../../image/product.jpg")}></img>
-                        </div>*/}
+                        <div className="image_product">
+                            <img src={this.props.item.image} />
+                        </div>
+                        <br></br>
 
                 </div>
                 <br></br>

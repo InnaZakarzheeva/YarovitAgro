@@ -6,7 +6,7 @@ export default class Footer extends React.Component{
         return(
             <div className="iFooterWrapper">
                 <div className="iFooterLogo">
-                YAROV<img src={require('../../image/logo.png')} className="logo_img" />T
+                YAROV<img src={require('../../image/logo.png')} className="logo_img1" />T
                 </div>
                 <div className="iFooterAbout">
                 О нашем интернет-магазине:
@@ -15,10 +15,10 @@ export default class Footer extends React.Component{
                 <div className="iFooterContacts">
                 Контакты:
                     <div className="iFooterPhone">
-                    <img src={require("../../image/phone.png")}></img><a href="tel:+380900000000">+38 (090) 00 00 000</a>
+                    <img src={require("../../image/phone.png")}></img><a href="tel:+380672570187">+38(067)2570187</a>
                     </div>
                     <div className="iFooterMail">
-                    <img src={require("../../image/mail.png")}></img><a href="tel:+380900000000">+38 (090) 00 00 000</a>
+                    <img src={require("../../image/mail.png")}></img><a href="mailto:andkoff.ua@gmail.com">andkoff.ua@gmail.com</a>
                     </div>
                     <div className="iFooterSocial">
                     <img src={require("../../image/telegram.png")}></img>
