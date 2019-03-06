@@ -43,23 +43,41 @@
 .menuItem:hover>a{
     text-decoration: underline;
     text-shadow: 0 0 40px black;
-    
+    -webkit-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    transform: scale(1.07);
+}
+
+.callText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 650;
+    color: white;
+    text-shadow: 0 0 40px black;
+    cursor: pointer;
+}
+
+.callText:hover{
+    -webkit-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    transform: scale(1.07);
+    text-decoration: underline;
 }
 
 .callButton{
-    display: flex;
+    display: none;
     height: 80%;
     width: 200px;
     justify-content: center;
     align-items: center;
     border:2px solid white;
-    border-radius:  5px;
-    
+    border-radius: 5px;
     font-size: 26px;
     font-weight: 650;
     color: white;
     cursor: pointer;
-    font-family: 'Play', sans-serif;
 }
 
 .callButton:hover{
@@ -70,76 +88,82 @@
     transform: scale(1.05);
 }
 
-@media (max-device-width: 930px) {
-    .menuItem{
+@media (max-device-width: 940px) {
+    .callText{
         font-size: 20px;
     }
-    .callButton{
-        font-size: 22px; 
-        height: 75%;
-        width: 180px;
-    }
     .logo{
-        font-size: 53px;
-    } 
-}
+        font-size: 42px;
+    }
+    .menuItem>a{
+        font-size: 19px;
+    }
+}   
 
 @media (max-device-width: 800px) {
-    .menuItem{
-        font-size: 18px;
-    }
     .callButton{
-        font-size: 21px; 
-        height: 70%;
-        width: 165px;
+        display: flex;
+    }
+    .callText{
+        display: none;
+    }
+    .wrapper_menu{
+        height: 68px;
     }
     .logo{
-        font-size: 46px;
-    } 
+        font-size: 35px;
+    }
+    .menuItem>a{
+        font-size: 17px;
+    }
+    .callButton{
+        height: 74%;
+        width: 146px;
+        font-size: 20px;
+    }
     .logo_img{
-        width: 45px;
-        height: 45px;
-    }    
+        height: 40px;
+        margin:0 3px 0 3px;
+    }
 }
 
 @media (max-device-width: 700px) {
     .wrapper_menu{
-        height: 70px;
+        height: 60px;
     }
-    .menuItem{
+    .logo{
+        font-size: 30px;
+    }
+    .menuItem>a{
         font-size: 16px;
     }
     .callButton{
-        font-size: 19px; 
-        height: 75%;
-        width: 155px;
+        width: 123px;
+        font-size: 18px;
     }
-    .logo{
-        font-size: 40px;
-    } 
     .logo_img{
-        width: 40px;
-        height: 40px;
-    }    
+        height: 35px;
+    }
 }
 
-@media (max-device-width: 600px) {
+@media (max-device-width: 610px) {
     .menuItem{
         display: none;
     }
 }
 
-@media (max-device-width: 600px) {
-    .callButton{
-        font-size: 18px; 
-        height: 72%;
-        width: 150px;
+@media (max-device-width: 400px) {
+    .wrapper_menu{
+        height: 55px;
     }
     .logo{
-        font-size: 35px;
-    } 
+        font-size: 24px;
+    }
+    .callButton{
+        width: 112px;
+        font-size: 16px;
+    }
     .logo_img{
-        width: 37px;
-        height: 37px;
-    }   
+        height: 30px;
+    }
 }

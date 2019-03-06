@@ -7,7 +7,7 @@ export default class Menu extends React.Component{
         return(
             <div className="wrapper_menu">
             <div className="logo">
-            YAROV<img src={require('../../image/logo.png')} className="logo_img" />T AGRO
+            YAROV<img src={require('../../image/logo.png')} className="logo_img" />T
             </div>
                 <div className="menuItem">
                     <a href="#company">О компании</a>
@@ -19,7 +19,10 @@ export default class Menu extends React.Component{
                     <a href="#contacts">Контакты</a>
                 </div>
                 <div className="callButton">
-                    Подзвонить
+                    Позвонить
+                </div>
+                <div className="callText">
+                    +380 67 25 70 187
                 </div>
             </div>
         );

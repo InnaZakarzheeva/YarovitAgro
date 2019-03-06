@@ -6,11 +6,11 @@ export default class Footer extends React.Component{
         return(
             <div className="iFooterWrapper">
                 <div className="iFooterLogo">
-                YAROV<img src={require('../../image/logo.png')} className="logo_img" />T AGRO
+                YAROV<img src={require('../../image/logo.png')} className="logo_img" />T
                 </div>
                 <div className="iFooterAbout">
                 О нашем интернет-магазине:
-                <p>Гуминовые удобрения ТМ «YAROVIT AGRO» это качественная органика и минералы изготовленные по европейским стандартам.</p>
+                <p>Гуминовые удобрения ТМ «YAROVIT» это качественная органика и минералы изготовленные по европейским стандартам.</p>
                 </div>
                 <div className="iFooterContacts">
                 Контакты:
