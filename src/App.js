@@ -114,7 +114,7 @@ const arr = [
       }]
 export default class App extends React.Component {
   render() {
-    return (
+    return ( 
       <div className="App">
       <ScrollUpButton style={{background: "transparent", zIndex: "10000"}}/>
       <Menu/>
