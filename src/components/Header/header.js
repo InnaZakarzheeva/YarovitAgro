@@ -7,8 +7,9 @@ export default class Header extends React.Component{
         return(
             
                 <div className="iHeaderImage">
+                {/*
                 <div className="elements"> <img src={require("../../image/elements.png")} /></div>
-                
+                */}
                     <div className="products" ><img src={require("../../image/prod.png")}/></div>
                     
                     <div className="text">
