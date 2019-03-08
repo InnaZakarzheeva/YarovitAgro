@@ -9,7 +9,7 @@
 }
 .iFooterLogo{
     display: flex;
-    width: 30%;
+    width: 25%;
     align-items: center;
     justify-content: center;
     font-size: 54px;
@@ -17,14 +17,13 @@
     color: white;
     opacity: 0.75;
     text-shadow: 0 0 25px black;
-
 }
+
 .logo_img1{
     height: 50px;
     filter: drop-shadow(0 0 40px black);
     margin:0 5px 0 5px;
 }
-
 
 .iFooterAbout{
     display: flex;
@@ -32,11 +31,14 @@
     width: 30%;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
-   
+    
+}
+.iFooterAbout>h6, .iFooterContacts>h6{
+    font-size: 22px;
+    margin: 0 auto;
 }
 .iFooterAbout>p{
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
    
 }
@@ -48,14 +50,14 @@
     justify-content: space-evenly;
     align-items: center;
     font-size: 24px;
-   
 }
+
 .iFooterPhone, .iFooterMail{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 60%;
+    width: 100%;
     align-items: flex-end;
 }
 .iFooterPhone>img, .iFooterMail>img{
@@ -63,7 +65,7 @@
     height: 25px;
 }
 .iFooterPhone>a, .iFooterMail>a{
-    font-size: 20px;
+    font-size: 22px;
     text-decoration: none;
     color: white;
 }
@@ -81,130 +83,129 @@
 
 @media (max-device-width: 1440px) and (min-device-width: 1024px){
     .iFooterLogo{
-        font-size: 72px;
+        font-size: 64px;
     }
     .logo_img1{
-        height: 70px!important;
+        height: 60px;
     }
-    .iFooterAbout{
+}
+@media  (max-device-width: 1024px) and (min-device-width: 916px){
+    .iFooterAbout>h6, .iFooterContacts>h6{
         font-size: 20px;
     }
     .iFooterAbout>p{
+        font-size: 16px;
+    }
+    .iFooterPhone>a, .iFooterMail>a{
         font-size: 18px;
     }
-    .iFooterContacts{
-        font-size: 22px;
-        width: 35%;
-    }
-    .iFooterPhone>a, .iFooterMail>a {
-        font-size: 20px;
-    }
 }
-@media (max-device-width: 1024px) and (min-device-width: 768px){
+@media (max-device-width: 916px) and (min-device-width: 768px){
     .iFooterLogo{
-        font-size: 72px;
-        width: 50%;
+        font-size: 48px;
     }
     .logo_img1{
-        height: 50px!important;
+        height: 46px;
     }
-    .iFooterAbout{
+    .iFooterAbout>h6, .iFooterContacts>h6{
+        font-size: 18px;
+    }
+    .iFooterAbout>p{
+        font-size: 16px;
+    }
+    .iFooterPhone>a, .iFooterMail>a{
+        font-size: 18px;
+    }
+    .iFooterMail>img, .iFooterPhone>img{
+        width: 20px;
+        height: 20px;
+    }
+    .iFooterSocial{
+        width: 90%;
+    }
+}
+@media (max-device-width: 824px) and (min-device-width: 768px){
+    .iFooterAbout>h6{
+        font-size: 16px!important;
+    }
+}
+@media (max-device-width: 768px) and (min-device-width: 670px){
+    .iFooterAbout, .iFooterContacts>h6{
         display: none;
-        visibility: hidden;
+    }
+    .iFooterLogo, .iFooterContacts{
+        width: 50%;
+    }
+    .iFooterMail, .iFooterPhone{
+        width: 80%;
+    }
+    .iFooterSocial>img{
+        width: 45px;
+        height: 45px;
+    }
+    .iFooterSocial{
+        width: 80%;
+    }
+    .iFooterLogo{
+        font-size: 68px;
+    }
+    .logo_img1{
+        height: 66px;
+    }
+}
+@media (max-device-width: 670px) and (min-device-width: 425px){
+    .iFooterWrapper{
+        flex-direction: column;
+        height: 300px;
+    }
+    .iFooterAbout, .iFooterContacts>h6{
+        display: none;
+    }
+    .iFooterLogo{
+        width: 100%;
+        height: 50%;
+    }
+    .iFooterContacts{
+        width: 100%;
+    }
+    .iFooterMail, .iFooterPhone{
+        width: 60%;
+    }
+    .iFooterSocial>img{
+        width: 45px;
+        height: 45px;
+    }
+    .iFooterSocial{
+        width: 80%;
+    }
+    .iFooterLogo{
+        font-size: 54px;
+    }
+    .logo_img1{
+        height: 50px;
+    }
+}
+@media (max-device-width: 500px) and (min-device-width: 425px) {
+    .iFooterMail, .iFooterPhone{
+        width: 70%!important;
+    }
+}
+@media (max-device-width: 425px ) and (min-device-width: 325px){
+    .iFooterWrapper{
+        flex-direction: column;
+        height: 300px;
+    }
+    .iFooterAbout, .iFooterContacts>h6{
+        display: none;
+    }
+    .iFooterLogo{
+        height: 40%;
+    }
+    .iFooterContacts{
+        width: 100%;
+    }
+    .iFooterMail, .iFooterPhone{
+        width: 80%;
     }
     
-    .iFooterContacts{
-        font-size: 22px;
-        width: 50%;
-    }
-    .iFooterPhone>a, .iFooterMail>a {
-        font-size: 20px;
-    }
-}
-@media (max-device-width: 768px) and (min-device-width: 425px){
-    .iFooterLogo{
-        font-size: 54px!important;
-    }
-    .logo_img1{
-        height: 50px!important;
-    }
-    .iFooterContacts{
-        font-size: 20px!important;
-    }
-}
-
-@media (max-device-width: 768px) and (min-device-width: 375px){
-    .iFooterWrapper{
-        flex-direction: column;
-        height: 350px;
-    }
-    .iFooterLogo{
-        width: 100%;
-        font-size: 45px;
-        height: 30%;
-        margin-bottom: 10px;
-    }
-    .logo_img1{
-        width: 20px;
-        height: 47px;
-    }
-    .iFooterAbout{
-        display: none;
-        visibility: hidden;
-    }
-   
-    .iFooterContacts{
-        width: 100%;
-        height: 100%;
-        font-size: 18px;
-    }
-    .iFooterPhone, .iFooterMail{
-        width: 75%;
-        height: 10%;
-    }
-    .iFooterSocial{
-        width: 85%;
-    }
-    .iFooterSocial>img{
-        width: 45px;
-        height: 45px;
-    }
-}
-
-@media (max-device-width: 375px) and (min-device-width: 320px){
-    .iFooterWrapper{
-        flex-direction: column;
-        height: 350px;
-    }
-    .iFooterLogo{
-        width: 100%;
-        font-size: 35px;
-        height: 30%;
-        margin-bottom: 10px;
-    }
-    .logo_img1{
-        width: 18px;
-        height: 37px;
-    }
-    .iFooterAbout{
-        display: none;
-        visibility: hidden;
-    }
-    .iFooterContacts{
-        width: 100%;
-    }
-    .iFooterContacts>p{
-        display: none;
-        visibility: hidden;
-    }
-    .iFooterPhone, .iFooterMail{
-        width: 75%;
-    }
-    .iFooterSocial{
-        width: 85%;
-    }
-    .iFooterSocial>img{
-        width: 45px;
-        height: 45px;
-    }
 }

@@ -94,9 +94,7 @@ export default class Product extends React.Component{
                         </div>
                         ):null}
                          <br></br><br></br>
-                        <div className="image_product">
-                            <img src={this.props.item.image} />
-                        </div>
+                         <img className="image_product" src={this.props.item.image} />
                         <br></br>
 
                 </div>
