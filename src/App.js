@@ -116,7 +116,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-      <ScrollUpButton style={{background: "transparent"}}/>
+      <ScrollUpButton className="scrollButton"/>
       <Menu/>
       <Header/>
       <Company/>
