@@ -172,8 +172,8 @@
         width: 60%;
     }
     .iFooterSocial>img{
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
     }
     .iFooterSocial{
         width: 80%;
@@ -183,6 +183,9 @@
     }
     .logo_img1{
         height: 50px;
+    }
+    .iFooterMail>a, .iFooterPhone>a{
+        font-size: 24px;
     }
 }
 @media (max-device-width: 500px) and (min-device-width: 425px) {
@@ -205,7 +208,13 @@
         width: 100%;
     }
     .iFooterMail, .iFooterPhone{
-        width: 80%;
+        width: 90%;
     }
-    
+    .iFooterMail>a, .iFooterPhone>a{
+        font-size: 24px;
+    }
+    .iFooterSocial>img{
+        width: 45px;
+        height: 45px;
+    }
 }
