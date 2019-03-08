@@ -2,4 +2,8 @@
   
   font-family: 'Play', sans-serif;
 }
+.scrollButton{
+  background: transparent;
+  z-index:"10000";
+}
 
