@@ -48,7 +48,7 @@
     transform: scale(1.07);
 }
 
-.callText{
+.callText>a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,6 +57,7 @@
     color: white;
     text-shadow: 0 0 40px black;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .callText:hover{
@@ -78,6 +79,7 @@
     font-weight: 650;
     color: white;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .callButton:hover{
@@ -89,7 +91,7 @@
 }
 
 @media (max-device-width: 940px) {
-    .callText{
+    .callText>a{
         font-size: 20px;
     }
     .logo{
@@ -132,7 +134,7 @@
         height: 60px;
     }
     .logo{
-        font-size: 30px;
+        font-size: 32px;
     }
     .menuItem>a{
         font-size: 16px;
@@ -155,9 +157,6 @@
 @media (max-device-width: 400px) {
     .wrapper_menu{
         height: 55px;
-    }
-    .logo{
-        font-size: 24px;
     }
     .callButton{
         width: 112px;

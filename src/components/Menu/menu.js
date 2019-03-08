@@ -18,11 +18,11 @@ export default class Menu extends React.Component{
                 <div className="menuItem">
                     <a href="#contacts">Контакты</a>
                 </div>
-                <div className="callButton">
+                <a href="tel:+380672570187" className="callButton">
                     Позвонить
-                </div>
+                </a>                
                 <div className="callText">
-                    +380 67 25 70 187
+                    <a href="tel:+380672570187">+38(067) 25 70 187</a>
                 </div>
             </div>
         );

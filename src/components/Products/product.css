@@ -173,7 +173,7 @@
     align-items: flex-start;
 }
 
-.details_title{
+.details_title, .details_title_item{
     display: flex;
     width: 100%;
     margin-top: 10px;
@@ -197,7 +197,7 @@
 .image_product{
     display: flex;
     justify-content: center;
-    width: 90%;
+    width: 75%;
 }
 
 .ul{
@@ -271,6 +271,9 @@
     .priceNumber{
         font-size: 20px;
     }
+    .priceText{
+        font-size: 20px;
+    }
 }
 
 @media (max-device-width:790px){
@@ -285,19 +288,105 @@
     .buy{
         margin-bottom: 15px;
     }
+    .image_product{
+        width: 85%;
+    }
+    .title{
+        font-size: 26px;
+    }
 }
-
 @media (max-device-width:640px){
+    .product{
+        width: 95%;
+    }
     .order_description{
-        height: 370px;
+        height: 350px;
+    }
+    .photo{
+        width: 70%;
+    }
+    .image_product{
+        width: 90%;
+    }
+    .priceNumber{
+        font-size: 18px;
+    }
+    .priceText{
+        font-size: 18px;
+    }
+    .seeMore{
+        font-size: 20px;
+        height: 50px;
+    }
+    .buy{
+        font-size: 20px;
+        height: 50px;
+    }
+    .seeMore>img{
+        align-self: center;
+    }
+    .title{
+        font-size: 24px;
     }
 }
 
 @media (max-device-width:521px){
     .order_description{
-        height: 415px;
+        height: 370px;
     }
     .aboutProduct{
         font-size:16px;
+    }
+    .photo{
+        width: 80%;
+    }
+    .image_product{
+        width: 95%;
+    }
+    .seeMore{
+        font-size: 18px;
+        height: 42px;
+    }
+    .details_title{
+        font-size: 18px;
+    }
+    .detail-item, .detail-item1{
+        font-size: 16px;
+    }
+    .detail-item1{
+        width: 230px;
+    }
+    .buy{
+        font-size: 18px;
+        height: 42px;
+    }
+    .seeMore>img{
+        height: 35px;
+        width: 35px;
+    }
+    .title{
+        font-size: 21px;
+        border-bottom: solid 2px green;
+    }
+    .ul{
+        width: 90%;
+    }
+}
+
+@media (max-device-width:410px){
+    .photo{
+        width: 90%;
+    }
+    .order_description{
+        height: 390px;
+    }
+    .title{
+        font-size: 16px;
+    }
+}
+
+@media (max-device-width:333px){
+    .order_description{
+        height: 410px;
     }
 }

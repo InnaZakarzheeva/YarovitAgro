@@ -25,10 +25,10 @@ export default class Footer extends React.Component{
                     </div>
                     
                     <div className="iFooterSocial">
-                    <img src={require("../../image/telegram.png")}></img>
-                    <img src={require("../../image/viber.png")}></img>
-                    <img src={require("../../image/instagram.png")}></img>
-                    <img src={require("../../image/youtube.png")}></img>
+                    <a title="Telegram" href="tg://resolve?domain=AndKoff"><img src={require("../../image/telegram.png")} className="iFooterSocialImg"></img></a>
+                    <a title="Viber" href="viber://add?number=380672570187"><img src={require("../../image/viber.png")} className="iFooterSocialImg"/></a>
+                    <img src={require("../../image/instagram.png")} className="iFooterSocialImg"></img>
+                    <img src={require("../../image/youtube.png")} className="iFooterSocialImg"></img>
                     </div>
                 
                 </div>

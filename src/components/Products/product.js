@@ -30,8 +30,7 @@ export default class Product extends React.Component{
                     {this.props.item.title} 
                 </h2>
             </ScrollableAnchor>
-                <div className="block_product">
-               
+                <div className="block_product">     
                     <div className="photo">
                         <Carousel>
                             {this.props.item.photo.map(photo => <img src={photo}/>)}
@@ -69,32 +68,26 @@ export default class Product extends React.Component{
                                     Преимущества:
                                 </div>
                                 <ul>
-    
-                                         {this.props.item.detail_item.map(detail_item => <li><span className="detail_item"> {detail_item}</span></li>)} 
-                                        
-                                   
+                                    {this.props.item.detail_item.map(detail_item => <li><span className="detail-item"> {detail_item}</span></li>)}                    
                                 </ul>
                             </div>
                             <div className="details_title">
-                                    Основные химические параметры удобрения:
+                                Основные химические параметры удобрения:
                             </div>
                             <div className="block_details">
-                                <ul className="ul">
-                                    
-                                    {this.props.item.detail_item1.map(detail_item1 => <li><span className="detail_item1"> {detail_item1}</span></li>)}
-                                 
-                                    
+                                <ul className="ul">  
+                                    {this.props.item.detail_item1.map(detail_item1 => <li><span className="detail-item1"> {detail_item1}</span></li>)}
                                 </ul>
                             </div>  
-                            <div className="details_title">Расчет нормы гумата калия</div>
+                            <div className="details_title_item">{this.props.item.details_title_item}</div>
                             <div className="detail-item" >
-                            Для грамотного расчета нормы гумата калия вносимого удобрения, необходимо учесть общую долю азотных удобрений, которые используются на 1 га земли. С учетом этого показателя, на 1 га понадобится 0,4-1л гумата калия (доля гуминовых кислот должна составлять 84 г/л).
+                           {this.props.item.norma}
                             </div>
                      
                         </div>
                         ):null}
                          <br></br><br></br>
-                         <img className="image_product" src={this.props.item.image} />
+                            <img className="image_product" src={this.props.item.image} />
                         <br></br>
 
                 </div>

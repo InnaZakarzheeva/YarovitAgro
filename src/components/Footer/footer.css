@@ -57,7 +57,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 60%;
     align-items: flex-end;
 }
 .iFooterPhone>img, .iFooterMail>img{
@@ -75,18 +75,30 @@
     justify-content: space-evenly;
     width: 70%;
 }
-.iFooterSocial>img{
+.iFooterSocialImg{
     cursor: pointer;
     width: 40px;
     height: 40px;
 }
-
+.iFooterSocialImg:hover{
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+}
 @media (max-device-width: 1440px) and (min-device-width: 1024px){
     .iFooterLogo{
         font-size: 64px;
     }
     .logo_img1{
         height: 60px;
+    }
+    .iFooterMail, .iFooterPhone{
+        width: 70%
+    }
+}
+@media (max-device-width: 1241px) and (min-device-width: 1024px){
+    .iFooterMail, .iFooterPhone{
+        width: 80%;
     }
 }
 @media  (max-device-width: 1024px) and (min-device-width: 916px){
@@ -98,6 +110,9 @@
     }
     .iFooterPhone>a, .iFooterMail>a{
         font-size: 18px;
+    }
+    .iFooterMail, .iFooterPhone{
+        width: 80%;
     }
 }
 @media (max-device-width: 916px) and (min-device-width: 768px){
@@ -123,10 +138,21 @@
     .iFooterSocial{
         width: 90%;
     }
+    .iFooterMail, .iFooterPhone{
+        width: 80%;
+    }
+}
+@media (max-device-width: 870px) and (min-device-width: 824px){
+    .iFooterMail, .iFooterPhone{
+        width: 85%;
+    }
 }
 @media (max-device-width: 824px) and (min-device-width: 768px){
     .iFooterAbout>h6{
         font-size: 16px!important;
+    }
+    .iFooterMail, .iFooterPhone{
+        width: 90%;
     }
 }
 @media (max-device-width: 768px) and (min-device-width: 670px){
@@ -139,7 +165,7 @@
     .iFooterMail, .iFooterPhone{
         width: 80%;
     }
-    .iFooterSocial>img{
+    .iFooterSocialImg{
         width: 45px;
         height: 45px;
     }
@@ -169,9 +195,9 @@
         width: 100%;
     }
     .iFooterMail, .iFooterPhone{
-        width: 60%;
+        width: 50%;
     }
-    .iFooterSocial>img{
+    .iFooterSocialImg{
         width: 50px;
         height: 50px;
     }
@@ -188,9 +214,14 @@
         font-size: 24px;
     }
 }
+@media (max-device-width: 570px) and (min-device-width: 500px){
+    .iFooterMail, .iFooterPhone{
+        width: 57%;
+    }
+}
 @media (max-device-width: 500px) and (min-device-width: 425px) {
     .iFooterMail, .iFooterPhone{
-        width: 70%!important;
+        width: 65%!important;
     }
 }
 @media (max-device-width: 425px ) and (min-device-width: 320px){
@@ -208,13 +239,18 @@
         width: 100%;
     }
     .iFooterMail, .iFooterPhone{
-        width: 90%;
+        width: 70%;
     }
     .iFooterMail>a, .iFooterPhone>a{
-        font-size: 24px;
+        font-size: 22px;
     }
-    .iFooterSocial>img{
+    .iFooterSocialImg{
         width: 45px;
         height: 45px;
+    }
+}
+@media (max-device-width: 370px) and (min-device-width: 320px){
+    .iFooterMail, .iFooterPhone{
+        width: 80%;
     }
 }
