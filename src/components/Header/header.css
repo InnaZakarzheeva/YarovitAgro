@@ -64,6 +64,9 @@
    .iHeaderImage{
        height: 400px;
    }
+   .elements{
+       display: none;
+   }
 
 }
 
@@ -85,6 +88,11 @@
     }
 
 }
+@media (max-device-width: 630px) and (min-device-width: 425px){
+    .elements{
+        display: none;
+    }
+}
 
 @media (max-device-width: 425px) and (min-device-width: 320px){
     .products{
@@ -102,6 +110,9 @@
         font-size: 18px;
         width: 350px;
     }
+    .elements{
+        display: none;
+    }
 }
 @media (max-device-width: 372px) and (min-device-width: 320px){
     .iHeaderImage{
@@ -110,5 +121,8 @@
     .text{
         font-size: 16px!important;
         width: 300px!important;
+    }
+    .elements{
+        display: none;
     }
 }
