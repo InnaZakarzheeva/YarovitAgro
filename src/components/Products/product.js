@@ -44,9 +44,11 @@ export default class Product extends React.Component{
                             <div className="priceText">
                                 Стоимость:
                             </div>
-                            <div className="priceNumber">
-                                {this.props.item.price}
-                            </div>
+                             <select className="priceNumber">
+                                    <option>{this.props.item.price1}</option>
+                                    <option>{this.props.item.price2}</option>
+                                    <option>{this.props.item.price3}</option>
+                                </select>
                          </div>
                         <button onClick={this.onOpenModal} className="buy" type="submit">Купить</button>
                             <Modal open={open} onClose={this.onCloseModal} center>
